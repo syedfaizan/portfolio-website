@@ -1,0 +1,151 @@
+{
+  "name": "Syed Faizan",
+  "email": "syedfaizan2008@gmail.com",
+  "phone": "+91-7204194938",
+  "location": "India",
+  "github": "https://github.com/syedfaizan",
+  "linkedin": "https://www.linkedin.com/in/syedfaizan2008/",
+  "website": "https://syedfaizan.dev",
+  "projects": [
+    {
+      "title": "Rivoli Digital Commerce Platform",
+      "description": "Vue/Nuxt frontend with NestJS and GraphQL services on Commercetools for a major UAE retail client. Redesigned platform achieved GTmetrix B grade and integrated Tabby, Tamara, and Apple Pay payment gateways.",
+      "tags": ["Vue.js", "Nuxt.js", "NestJS", "GraphQL", "Commercetools", "TypeScript"],
+      "link": "https://www.rivolishop.com"
+    },
+    {
+      "title": "Raena B2B eCommerce Platform",
+      "description": "Full-stack B2B e-commerce platform simplifying order placement for retailers. Built from scratch with React.js, Next.js, Node.js, Express, and MongoDB to manage complex inventory and delivery workflows.",
+      "tags": ["React.js", "Next.js", "Node.js", "Express", "MongoDB", "Mongoose"],
+      "link": "#"
+    },
+    {
+      "title": "Conde Nast Ads Library",
+      "description": "Owned the ad delivery library serving Vogue, Wired, AD, and GQ. Led development of Native Recipe and Mosaic Ads components, strengthening Conde Nast's advertising portfolio.",
+      "tags": ["React.js", "Node.js", "TypeScript", "Web Components"],
+      "link": "#"
+    },
+    {
+      "title": "eKaushal - National Skill Portal",
+      "description": "National skill-development and job portal for India's NSDC Govt initiative. Built on Node.js, AngularJS, MongoDB, and Express.js to serve job seekers across the country.",
+      "tags": ["Node.js", "AngularJS", "MongoDB", "Express.js", "Government"],
+      "link": "#"
+    },
+    {
+      "title": "News Intelligence Platform",
+      "description": "AI-powered news aggregation with story clustering, bias analysis, and real-time updates. Built with Next.js, TypeScript, and PostgreSQL to deliver intelligent content delivery.",
+      "tags": ["TypeScript", "Next.js", "PostgreSQL", "AI/ML"],
+      "link": "#"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Technical Lead (React)",
+      "company": "NuLogic (Remote)\nClient: Rivoli Digital - https://www.rivolishop.com",
+      "period": "Mar 2024 - Present",
+      "achievements": [
+        "Lead a team of 2 developers building a full-stack e-commerce platform on Vue.js/Nuxt.js, NestJS, and GraphQL services on Commercetools",
+        "Improved site performance from GTmetrix Grade E to B, reducing page load times and bounce rate",
+        "Integrated Tabby, Tamara, and Apple Pay payment gateways, plus Guest Checkout and order-tracking features",
+        "Built a reusable CMS component library, cutting new-page development time for the content team"
+      ]
+    },
+    {
+      "role": "Software Engineer II",
+      "company": "Conde Nast, Bengaluru",
+      "period": "May 2021 - Jan 2024",
+      "achievements": [
+        "Owned the Ads library powering ad delivery across Vogue, Wired, AD, GQ, and other Conde Nast titles using React.js, Node.js, and TypeScript",
+        "Contributed to Verso, the shared platform housing Conde Nast brands, enhancing its core capabilities",
+        "Led development of Native Recipe and Mosaic Ads components, strengthening Conde Nast's advertising offerings"
+      ]
+    },
+    {
+      "role": "Senior Web Developer",
+      "company": "Raena PTE LTD, Bengaluru",
+      "period": "Dec 2018 - May 2021",
+      "achievements": [
+        "Designed and developed the Raena B2B eCommerce platform, giving retailers a streamlined way to place orders",
+        "Simplified the order process, removing complexity around last-mile delivery and inventory management",
+        "Built with React.js, Next.js, Node.js, Express.js, MongoDB, and Mongoose"
+      ]
+    },
+    {
+      "role": "Software Engineer II",
+      "company": "Ness Technologies, Bengaluru",
+      "period": "Sep 2017 - Dec 2018",
+      "achievements": [
+        "Migrated a B2B retail platform's Item Management GUI from Java servlets to Angular with REST APIs, improving performance and supplier discovery workflows",
+        "Built with Angular, TypeScript, Redux, and REST APIs on a Java backend"
+      ]
+    },
+    {
+      "role": "Senior Software Engineer",
+      "company": "Team Pumpkin, Bengaluru",
+      "period": "Feb 2016 - Aug 2017",
+      "achievements": [
+        "Built Prestige Golfshire, a 360-degree video showcase for luxury villas",
+        "Developed the Node.js backend for Connectify, a React Native app for IndiaFirst Bank's customer outreach",
+        "Developed a full-page website screenshot tool using AngularJS, Node.js, MongoDB, and AWS"
+      ]
+    },
+    {
+      "role": "Software Engineer",
+      "company": "CISPL, Bengaluru",
+      "period": "Nov 2014 - Jan 2016",
+      "achievements": [
+        "Architected and built eKaushal, a national skill-development and job portal for the Govt. of India's NSDC, serving job seekers across rural and urban India",
+        "Built on Node.js, AngularJS, MongoDB, and Express.js"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor's in Information Science",
+      "institution": "Atria Institute of Technology, Bengaluru",
+      "year": "2014"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": ["React.js", "Redux", "TypeScript", "Next.js", "HTML5", "CSS3", "Vue.js", "Nuxt.js", "Angular"]
+    },
+    {
+      "category": "Backend",
+      "items": ["Node.js", "Express.js", "NestJS", "RESTful APIs", "GraphQL"]
+    },
+    {
+      "category": "Databases",
+      "items": ["MongoDB", "MySQL"]
+    },
+    {
+      "category": "Cloud & DevOps",
+      "items": ["AWS", "Webpack", "CI/CD"]
+    },
+    {
+      "category": "Other",
+      "items": ["Commercetools", "Git"]
+    }
+  ],
+  "softSkills": [
+    "Technical Leadership",
+    "Mentoring",
+    "Architecture Discussions",
+    "Cross-functional Collaboration",
+    "Stakeholder Communication",
+    "Agile/Scrum"
+  ],
+  "publications": [
+    {
+      "title": "Segmentation of Healthy and Affected Tissues from Brain MRI Images",
+      "journal": "IJARCSMS",
+      "year": "2014"
+    },
+    {
+      "title": "Appsfluxus 2014",
+      "description": "1st Place - Hackathon/Competition",
+      "year": "2014"
+    }
+  ]
+}
