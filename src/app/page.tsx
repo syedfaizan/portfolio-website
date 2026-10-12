@@ -76,7 +76,7 @@ export default function HomePage() {
         <div className="panel overflow-hidden md:col-span-2">
           <div className="relative aspect-[4/5] overflow-hidden rounded-t-[15px]">
             <Image
-              src="/headshot.png"
+              src="/headshot.webp"
               alt={`Portrait of ${personalInfo.name}`}
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
