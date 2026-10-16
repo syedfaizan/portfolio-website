@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import personalInfo from "./personal-info.json";
 import { CurrentYear } from "./components/current-year";
+import { GoogleAnalytics } from "./components/google-analytics";
 import { SiteNav } from "./components/site-nav";
 
 export const metadata: Metadata = {
@@ -72,6 +73,8 @@ export default function RootLayout({
             </div>
           </footer>
         </div>
+
+        {process.env.NODE_ENV === "production" && <GoogleAnalytics />}
       </body>
     </html>
   );
