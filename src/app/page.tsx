@@ -1,7 +1,23 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import personalInfo from "./personal-info.json";
 import { SocialLinks } from "./components/social-links";
+
+export const metadata: Metadata = {
+  title: "Syed Faizan — Technical Lead | React.js, Node.js & TypeScript",
+  description:
+    "Portfolio of Syed Faizan, a Technical Lead with 11.5 years building scalable React.js, Next.js, TypeScript and Node.js platforms for e-commerce, media and enterprise clients.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: "Syed Faizan — Portfolio",
+    title: "Syed Faizan — Tech Lead | React.js, Node.js, TypeScript",
+    description:
+      "Portfolio of Syed Faizan, a Technical Lead with 11.5 years building scalable React.js, Next.js, TypeScript and Node.js platforms.",
+  },
+};
 
 const facts = [
   { label: "Location", value: personalInfo.location },
@@ -54,16 +70,16 @@ export default function HomePage() {
 
           <div className="mt-7 flex flex-wrap gap-3">
             <Link
-              href="#projects"
+              href="/contact"
               className="btn-primary rounded-lg px-5 py-2.5 text-sm font-medium"
             >
-              View my work
+              Get in touch
             </Link>
             <Link
-              href="#contact"
+              href="#projects"
               className="btn-outline rounded-lg px-5 py-2.5 text-sm font-medium"
             >
-              Get in touch
+              View my work
             </Link>
           </div>
 
@@ -182,7 +198,7 @@ export default function HomePage() {
               Work
             </p>
             <Link
-              href="#contact"
+              href="/contact"
               className="font-label text-xs text-ink-soft transition-colors hover:text-accent"
             >
               Have a project in mind? ↗
@@ -350,19 +366,14 @@ export default function HomePage() {
             Currently open to new opportunities. Whether you need a technical
             lead or a hands-on engineer, I&apos;d love to hear from you.
           </p>
-          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-            <a
-              href={`mailto:${personalInfo.email}`}
+          <div className="mt-8 flex flex-col items-center justify-center gap-3">
+            <Link
+              href="/contact"
               className="btn-primary rounded-lg px-6 py-3 text-sm font-medium"
             >
-              {personalInfo.email}
-            </a>
-            <a
-              href={`tel:${personalInfo.phone.replace(/[^+\d]/g, "")}`}
-              className="btn-outline rounded-lg px-6 py-3 text-sm font-medium"
-            >
-              {personalInfo.phone}
-            </a>
+              Get in touch →
+            </Link>
+            <p className="text-xs text-muted">Replies usually within 24 hours.</p>
           </div>
         </section>
       </div>

@@ -3,17 +3,21 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const navLinks = [
-  { href: "#about", label: "About" },
-  { href: "#projects", label: "Work" },
-  { href: "#resume", label: "Experience" },
-  { href: "#contact", label: "Contact" },
-];
-
 export function SiteNav() {
   const pathname = usePathname();
   const isGrid = pathname === "/";
   const isList = pathname === "/list";
+
+  // The section anchors only exist on the two portfolio layouts, so from any
+  // other page they have to point back home first.
+  const sectionHref = (hash: string) => (isGrid || isList ? hash : `/${hash}`);
+
+  const navLinks = [
+    { href: sectionHref("#about"), label: "About" },
+    { href: sectionHref("#projects"), label: "Work" },
+    { href: sectionHref("#resume"), label: "Experience" },
+    { href: "/contact", label: "Contact" },
+  ];
 
   return (
     <nav className="fixed left-0 right-0 top-0 z-50 border-b border-line bg-paper">
@@ -63,12 +67,12 @@ export function SiteNav() {
             </Link>
           </div>
 
-          <a
-            href="#contact"
+          <Link
+            href="/contact"
             className="btn-primary hidden rounded-lg px-3.5 py-1.5 text-xs font-medium sm:inline-flex"
           >
             Hire Me
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

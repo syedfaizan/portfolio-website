@@ -1,7 +1,23 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import personalInfo from "../personal-info.json";
 import { SectionHeading } from "../components/section-heading";
 import { SocialLinks } from "../components/social-links";
+
+export const metadata: Metadata = {
+  title: "Classic view — work, experience & skills",
+  description:
+    "A classic single-column view of Syed Faizan's selected projects, 11.5 years of engineering experience, tech stack, education and publications.",
+  alternates: { canonical: "/list" },
+  openGraph: {
+    type: "website",
+    url: "/list",
+    siteName: "Syed Faizan — Portfolio",
+    title: "Syed Faizan — Classic portfolio view",
+    description:
+      "Syed Faizan's projects, experience, tech stack, education and publications in a classic single-column layout.",
+  },
+};
 
 export default function ListPage() {
   return (
@@ -40,16 +56,16 @@ export default function ListPage() {
 
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <Link
-              href="#projects"
+              href="/contact"
               className="btn-primary rounded-lg px-6 py-3 text-sm font-medium"
             >
-              View my work
+              Get in touch
             </Link>
             <Link
-              href="#contact"
+              href="#projects"
               className="btn-outline rounded-lg px-6 py-3 text-sm font-medium"
             >
-              Get in touch
+              View my work
             </Link>
           </div>
 
@@ -276,21 +292,14 @@ export default function ListPage() {
             love to hear from you.
           </p>
 
-          <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
-            <a
-              href={`mailto:${personalInfo.email}`}
+          <div className="mt-9 flex flex-col items-center justify-center gap-3">
+            <Link
+              href="/contact"
               className="btn-primary rounded-lg px-6 py-3 text-sm font-medium"
             >
-              {personalInfo.email}
-            </a>
-            {personalInfo.phone && (
-              <a
-                href={`tel:${personalInfo.phone.replace(/[^+\d]/g, "")}`}
-                className="btn-outline rounded-lg px-6 py-3 text-sm font-medium"
-              >
-                {personalInfo.phone}
-              </a>
-            )}
+              Get in touch →
+            </Link>
+            <p className="text-xs text-muted">Replies usually within 24 hours.</p>
           </div>
         </div>
       </section>

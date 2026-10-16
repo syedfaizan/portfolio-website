@@ -26,6 +26,8 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    /* Keep anchor targets clear of the fixed 4rem navigation bar. */
+    scroll-padding-top: 5rem;
   }
 
   body {

@@ -43,7 +43,6 @@ const icons = {
 const socials = [
   { label: "GitHub", href: personalInfo.github, icon: icons.github },
   { label: "LinkedIn", href: personalInfo.linkedin, icon: icons.linkedin },
-  { label: "Website", href: personalInfo.website, icon: icons.globe },
   { label: "Email", href: `mailto:${personalInfo.email}`, icon: icons.mail },
 ];
 
