@@ -3,7 +3,6 @@
 import { useEffect, useRef } from "react";
 import Script from "next/script";
 import { usePathname } from "next/navigation";
-import { useConsent } from "@/lib/consent";
 
 /** Google Analytics 4 (GA4) measurement ID. */
 export const GA_MEASUREMENT_ID = "G-CTETS7GMPN";
@@ -20,16 +19,11 @@ declare global {
 }
 
 export function GoogleAnalytics() {
-  const consent = useConsent();
   const pathname = usePathname();
   const isFirstRender = useRef(true);
 
-  // Nothing is loaded until analytics is explicitly accepted.
-  // The initial page view is sent automatically by `gtag('config', ...)`; App
-  // Router client-side navigations need a manual `page_view` event.
+  // Send page views on route changes; load GA by default.
   useEffect(() => {
-    if (consent !== "granted") return;
-
     if (isFirstRender.current) {
       isFirstRender.current = false;
       return;
@@ -40,9 +34,7 @@ export function GoogleAnalytics() {
       page_location: window.location.href,
       page_title: document.title,
     });
-  }, [consent, pathname]);
-
-  if (consent !== "granted") return null;
+  }, [pathname]);
 
   return (
     <>

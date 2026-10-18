@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import personalInfo from "./personal-info.json";
-import { CookieConsent, CookieSettingsButton } from "./components/cookie-consent";
 import { CurrentYear } from "./components/current-year";
 import { GoogleAnalytics } from "./components/google-analytics";
 import { SiteNav } from "./components/site-nav";
@@ -124,9 +123,7 @@ export default function RootLayout({
                 {personalInfo.location} · Available for remote and on-site roles
               </p>
 
-              <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 font-label text-[11px] text-muted">
-                <CookieSettingsButton />
-              </div>
+
 
               <p className="text-xs text-muted">
                 © <CurrentYear /> {personalInfo.name} · Built with Next.js &amp;
@@ -137,9 +134,7 @@ export default function RootLayout({
         </div>
 
         <StickyCta />
-        <CookieConsent />
-
-        {process.env.NODE_ENV === "production" && <GoogleAnalytics />}
+        <GoogleAnalytics />
       </body>
     </html>
   );
