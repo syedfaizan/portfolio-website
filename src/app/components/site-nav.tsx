@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -23,6 +24,14 @@ export function SiteNav() {
     <nav className="fixed left-0 right-0 top-0 z-50 border-b border-line bg-paper">
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between gap-3 px-4 sm:px-6">
         <Link href="/" className="group flex shrink-0 items-center gap-2">
+          <Image
+            src="/logo.png"
+            alt="Syed Faizan logo"
+            width={32}
+            height={32}
+            className="h-8 w-8 rounded-sm"
+            priority
+          />
           <span className="font-heading text-lg font-semibold tracking-tight text-ink transition-colors group-hover:text-accent">
             Syed Faizan<span className="text-accent">.</span>
           </span>
