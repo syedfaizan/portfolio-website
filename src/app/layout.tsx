@@ -14,9 +14,9 @@ const siteDescription =
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   icons: {
-    icon: "/logo.png",
+    icon: [{ url: "/logo.png", type: "image/png" }],
     shortcut: "/logo.png",
-    apple: "/logo.png",
+    apple: [{ url: "/logo.png", type: "image/png" }],
   },
   title: {
     default: siteTitle,
